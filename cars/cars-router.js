@@ -63,7 +63,7 @@ router.put('/:id', (req, res) =>{
 
 router.delete('/:id', (req, res)=>{
     const {id} = req.params;
-    db('accounts')
+    db('cars')
         .where({id})
         .del()
         .then(count =>{
